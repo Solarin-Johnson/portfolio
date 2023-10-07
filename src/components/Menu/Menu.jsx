@@ -7,7 +7,7 @@ function Menu(){
 
     useEffect(() => {
         const handleScroll = () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 500) {
             setIsSticky(true);
         } else {
             setIsSticky(false);
@@ -26,7 +26,8 @@ function Menu(){
 
     return(
         <div id="menu" className={stick}>
-        
+            <div className="logo"></div>
+            <div className="tabs"></div>
         </div>
     )
 }

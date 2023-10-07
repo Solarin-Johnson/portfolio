@@ -14,9 +14,9 @@ body{
 
 #container{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 50px;
+    grid-template-rows: 50px 3000px;
     grid-template-columns: 1fr;
 }
