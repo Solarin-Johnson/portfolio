@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import './menu.scss'
 import { useState } from 'react';
-
+import logo from '../../logo.svg'
 function Menu(){
     const [isSticky, setIsSticky] = useState(false);
 
@@ -26,7 +26,9 @@ function Menu(){
 
     return(
         <div id="menu" className={stick}>
-            <div className="logo"></div>
+            <div className="logo">
+                <img src={logo} width={'60px'} alt='js' />
+            </div>
             <div className="tabs"></div>
         </div>
     )
