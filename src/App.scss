@@ -1,0 +1,22 @@
+@import 'color';
+
+
+:root {
+    --primary-color: #007BFF;
+    --text-color: #333333;
+    --bg-color: #F5F5F5;
+  }
+  
+
+body{
+    background-color: var(--bg-color);
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr;
+}

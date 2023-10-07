@@ -3,12 +3,6 @@ $a_color: #6BBD45;
 
 // styles.scss
 
-:root {
-    --primary-color: #007BFF;
-    --text-color: #333333;
-    --bg-color: #F5F5F5;
-  }
-  
 
 // Light
 // $bg_color: #F5F5F5;
@@ -19,7 +13,3 @@ $a_color: #6BBD45;
 // $bg_color: #121212;
 // $text: #333333;
 // $p_color: #03A9F4;
-
-*{
-    background-color: var(--bg-color);
-}
