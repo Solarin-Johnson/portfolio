@@ -3,14 +3,85 @@
 #menu{
     background-color: var(--bg-color);
     padding: 0 20px;
-    transition: background-color 0.3s ease-in-out;  
+    display: grid;
+    grid-gap: 0 !important;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr;
+    align-content: center;
+    align-items: center;
+    transition: .1s ease-in all;
+
+}
+
+.tabs, #mode{
+    justify-self: end;
+}
+
+.tabs{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 2px;
+    grid-gap: 5px;
+    padding: 0 10px;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: repeat(4, 65px);
+    grid-gap: 7vw;
+    font-size: 16px;
+}
+
+.menu div{
+    cursor: pointer;
+    transition: .1s ease-out transform;
+}
+
+#scroll{
+    background-color: $a_color;
+    width: 45px;
+    margin-left: 1.5px;
+    justify-content: center;
+    transition: .2s ease-in-out margin;
+}
+
+#mode{
+    max-width: 25px;
+    cursor: pointer;
+    margin-right: 1vw;
+}
+
+
+.material-symbols-outlined {
+    transition: .1s ease-out transform;
+    font-size: 30px;
+    color: inherit;
+    cursor: pointer;
+    width: 25px;
+}
+
+.material-symbols-outlined:hover, .menu div:hover {
+    transform: scale(1.15);
+}
+
+.material-symbols-outlined:active {
+    transform: rotateZ(360deg);
+    transform: scale(.85);
+}
+
+.menu div:hover{
+    transform: scale(1.1);
+}
+.menu div:active{
+    transform: scale(.98);
+
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: calc(100vw - 40px);
     height: 60px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000;
   }

@@ -10,6 +10,8 @@
 
 body{
     background-color: var(--bg-color);
+    font-family: 'Poppins', sans-serif;
+    transition: .1s ease-in all;
 }
 
 #container{
@@ -19,11 +21,12 @@ body{
     display: grid;
     grid-template-rows: 60px 3000px;
     grid-template-columns: 1fr;
+    color: var(--text-color);
 }
 
 
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
