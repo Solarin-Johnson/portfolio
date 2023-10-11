@@ -3,6 +3,7 @@ import './menu.scss'
 import Tab from './Tabs';
 import { useState } from 'react';
 import logo from '../../logo.svg'
+import logo_light from '../../logo_light.svg'
 function Menu(){
     const [isSticky, setIsSticky] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -37,15 +38,14 @@ function Menu(){
         const [primaryColor, setPrimaryColor] = useState('#007BFF');
         const [bgColor, setBgColor] = useState('#F5F5F5');
         const [textColor, setTextColor] = useState('#333333');
-        console.log(mode)
 
         const lightMode = () => {
                 setPrimaryColor('#03A9F4')
                 setBgColor('#121212')
-                setTextColor('#FFFFFF')
+                setTextColor('#F5F5F5')
                 setMode('dark')
             }
-            const darkMode = () => {
+        const darkMode = () => {
                 setPrimaryColor('#007BFF')
                 setBgColor('#F5F5F5')
                 setTextColor('#333333')
@@ -56,24 +56,44 @@ function Menu(){
         document.documentElement.style.setProperty('--bg-color', bgColor)
         document.documentElement.style.setProperty('--text-color', textColor)
     return(
-        <div id="menu" className={stick}>
-            <div className="logo">
-                <img src={logo} width={'60px'} alt='js' />
+        <>
+            <div id="menu" className={stick}>
+                <div className="logo">
+                {mode === 'light' ?
+                    <img src={logo} width={'60px'} alt='js' />
+                    : 
+                    <img src={logo_light} width={'60px'} alt='js' />
+                }
+                </div>
+                {windowWidth > 600 ?
+                        <Tab />
+                : <></> 
+                }
+
+                {mode === 'light' ? 
+                <div id='mode' onClick={lightMode} className="material-symbols-outlined">
+                    light_mode
+                </div>
+                : <div id='mode' onClick={darkMode} className="material-symbols-outlined">
+                    dark_mode
+                </div>
+                }
+                
+                { windowWidth <= 600 ? 
+                    <span id='menu_bar' className='material-symbols-outlined'> menu </span> 
+                : <></>
+                }
+
             </div>
-            {windowWidth > 600 ?
+            {windowWidth < 600 ?
+                <>
                     <Tab />
+    <div id="fade"></div>
+
+                </>
             : <></> 
             }
-            {mode === 'light' ? 
-            <div id='mode' onClick={lightMode} className="material-symbols-outlined">
-                light_mode
-            </div>
-            : <div id='mode' onClick={darkMode} className="material-symbols-outlined">
-                dark_mode
-            </div>
-            }
-
-        </div>
+        </>
     )
 }
 

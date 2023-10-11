@@ -10,7 +10,7 @@
     align-content: center;
     align-items: center;
     transition: .1s ease-in all;
-
+    z-index: 100;
 }
 
 .tabs, #mode{
@@ -42,25 +42,26 @@
     width: 45px;
     margin-left: 1.5px;
     justify-content: center;
-    transition: .2s ease-in-out margin;
+    transition: .2s ease-out margin;
 }
 
 #mode{
     max-width: 25px;
     cursor: pointer;
     margin-right: 1vw;
+    width: 60px;
 }
 
 
 .material-symbols-outlined {
-    transition: .1s ease-out transform;
+    transition: .15s cubic-bezier(0.4, 0, 0.6, 1) transform;
     font-size: 30px;
     color: inherit;
-    cursor: pointer;
     width: 25px;
 }
 
 .material-symbols-outlined:hover, .menu div:hover {
+    cursor: pointer;
     transform: scale(1.15);
 }
 
@@ -83,18 +84,78 @@
     width: calc(100vw - 40px);
     height: 60px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    z-index: 1000;
-  }
+    z-index: 100;
+}
 
+#menu_bar{
+    display: grid;
+    justify-self: end;
+}
+
+#fade{
+    width: 100vw;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--text-color);
+    opacity: 0.1;
+    position: fixed;
+    // display: none;
+}
 
   @media screen and (max-width: 600px) {
     #menu{
-        grid-template-columns: repeat(2, auto);
-        padding: 0 20px;
+        grid-template-columns: repeat(3, auto);
+        padding: 0 20px 0 0px;
     }
     #mode{
-        cursor: none;
-        padding-right: 10px;
         font-size: 25px;
     }
+    .sticky{
+        width: calc(100vw - 20px);
+    }
+
+    #scroll{
+        display: none;
+    }
+    body{
+        position: relative;
+    }
+    .tabs{
+        position: fixed;
+        width: 200px;
+        height: 100vh;
+        background-color: var(--bg-color);
+        top: 0px;
+        left: 0;
+        z-index: 1;
+        overflow-y: scroll;
+        
+    }
+    .menu{
+        min-height: 500px;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: 1fr;
+        align-content: center;
+        align-self: center;
+        justify-items: center;
+        padding: 20px 0;
+        grid-gap: 10vh;
+    }
+        
+    ::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 40px;
+        cursor: pointer;
+        background-color: #7272727a;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
   }
+
+  
