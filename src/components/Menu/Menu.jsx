@@ -56,6 +56,12 @@ function Menu(){
         document.documentElement.style.setProperty('--primary-color', primaryColor)
         document.documentElement.style.setProperty('--bg-color', bgColor)
         document.documentElement.style.setProperty('--text-color', textColor)
+
+        const[clicked, isClicked] = useState(false)
+
+        const setIsClicked = (e) => {
+            isClicked(e)
+        }
     return(
         <>
             <div id="menu" className={stick}>
@@ -81,15 +87,29 @@ function Menu(){
                 }
                 
                 { windowWidth <= 600 ? 
-                    <Menubar />
+                    <Menubar setIsClicked={setIsClicked} />
                 : <></>
                 }
 
             </div>
             {windowWidth < 600 ?
-                <>
-                    <Tab />
-                    <div id="fade"></div>
+                    <>
+                    {clicked ? 
+                    <>
+                        <div className="tabs show">
+                            <Tab />
+                        </div>
+                        <div id="fade" className='show'></div>
+                    </>
+                    :
+                    <>
+                        <div className="tabs">
+                            <Tab />
+                        </div>
+                        <div id="fade"></div>
+                    </>
+                    
+                }
                 </>
             : <></> 
             }

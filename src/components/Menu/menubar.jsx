@@ -1,24 +1,24 @@
 import { useState } from 'react'
 import './bar.scss' 
 
-function Menubar(){
+function Menubar({ setIsClicked }){
     const[clicked, isClicked] = useState(false)
     const close = (e)=> {
+        setIsClicked(clicked)
         if(!clicked){
             e.target.parentElement.classList = 'close'
             isClicked(!clicked)
         } else {
             e.target.parentElement.classList = ''
             isClicked(!clicked)
-
         }
     }
     return(
-        <div onClick={close} id="menuBar">
-            <div id=""></div>
-            <div id=""></div>
-            <div id=""></div>
-        </div>
+        <label id="menuBar">
+            <div onClick={close} id=""></div>
+            <div onClick={close} id=""></div>
+            <div onClick={close} id=""></div>
+        </label>
     )
 }
 

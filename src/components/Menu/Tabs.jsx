@@ -17,7 +17,7 @@ function Tab(){
         e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 206px)'
     }
     return(
-        <div className="tabs">
+        <>
             <div className="menu">
                 <div id="home"onClick={home}>Home</div>
                 <div id="about" onClick={about} >About</div>
@@ -25,7 +25,7 @@ function Tab(){
                 <div id="contact" onClick={contact}>Contact</div>
             </div>
             <div id="scroll"></div>
-        </div>
+        </>
     )
 }
 
