@@ -1,0 +1,43 @@
+#menuBar{
+    justify-self: end;
+    width: 25px;
+    height: 30px;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+    align-content: center;
+}
+
+#menuBar div{
+    transition: .1s ease-in transform;
+    height: 3px;
+    width: 25px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+}
+
+.close div{
+    margin-left: 10px;
+    position: absolute;
+}
+
+.close :first-child{
+    position: absolute;
+    width: 2px !important;
+    height: 30px !important;
+    display: block;
+    transform: rotateZ(45deg);
+}
+
+.close :nth-child(2){
+    visibility: hidden;
+}
+
+.close :last-child{
+    position: absolute;
+    width: 2px !important;
+    height: 30px !important;
+    display: block;
+    transform: rotateZ(135deg);
+}

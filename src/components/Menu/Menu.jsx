@@ -4,6 +4,7 @@ import Tab from './Tabs';
 import { useState } from 'react';
 import logo from '../../logo.svg'
 import logo_light from '../../logo_light.svg'
+import Menubar from './menubar';
 function Menu(){
     const [isSticky, setIsSticky] = useState(false);
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -80,7 +81,7 @@ function Menu(){
                 }
                 
                 { windowWidth <= 600 ? 
-                    <span id='menu_bar' className='material-symbols-outlined'> menu </span> 
+                    <Menubar />
                 : <></>
                 }
 
@@ -88,8 +89,7 @@ function Menu(){
             {windowWidth < 600 ?
                 <>
                     <Tab />
-    <div id="fade"></div>
-
+                    <div id="fade"></div>
                 </>
             : <></> 
             }

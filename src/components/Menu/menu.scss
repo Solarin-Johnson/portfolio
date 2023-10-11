@@ -5,7 +5,7 @@
     padding: 0 20px;
     display: grid;
     grid-gap: 0 !important;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: auto auto 60px;
     grid-template-rows: 1fr;
     align-content: center;
     align-items: center;
@@ -50,6 +50,7 @@
     cursor: pointer;
     margin-right: 1vw;
     width: 60px;
+    display: none;
 }
 
 
@@ -100,7 +101,7 @@
     background-color: var(--text-color);
     opacity: 0.1;
     position: fixed;
-    // display: none;
+    display: none;
 }
 
   @media screen and (max-width: 600px) {
