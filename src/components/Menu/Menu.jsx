@@ -60,7 +60,8 @@ function Menu(){
         const[clicked, isClicked] = useState(false)
 
         const setIsClicked = (e) => {
-            isClicked(e)
+            isClicked(!e)
+            console.log(clicked)
         }
     return(
         <>

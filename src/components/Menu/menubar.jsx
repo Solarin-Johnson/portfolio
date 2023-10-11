@@ -4,12 +4,13 @@ import './bar.scss'
 function Menubar({ setIsClicked }){
     const[clicked, isClicked] = useState(false)
     const close = (e)=> {
-        setIsClicked(clicked)
         if(!clicked){
             e.target.parentElement.classList = 'close'
+            setIsClicked(clicked)
             isClicked(!clicked)
         } else {
             e.target.parentElement.classList = ''
+            setIsClicked(clicked)
             isClicked(!clicked)
         }
     }
