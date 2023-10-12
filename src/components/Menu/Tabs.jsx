@@ -6,7 +6,7 @@ function Tab(){
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 64px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 66px)'
     }
     const skills = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)

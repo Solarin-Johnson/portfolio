@@ -46,7 +46,7 @@
 #scroll{
     background-color: $a_color;
     width: 45px;
-    margin-left: 0px;
+    margin-left: 1px;
     justify-content: center;
     transition: .2s ease-out margin;
 }
@@ -110,10 +110,15 @@
     top: 0;
     height: 100vh;
     background-color: var(--text-color);
-    opacity: 0.1;
+    opacity: 0;
     position: fixed;
-    transform: translateX(-150vw);
-    // display: none;
+    transition: .3s ease-in-out all;
+    visibility: hidden;
+}
+
+.appear{
+    visibility: visible !important;
+    opacity: .1 !important;
 }
 
 .show{

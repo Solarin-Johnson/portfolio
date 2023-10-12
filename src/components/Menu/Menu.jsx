@@ -101,7 +101,7 @@ function Menu(){
                         <div className="tabs show">
                             <Tab />
                         </div>
-                        <div id="fade" className='show'></div>
+                        <div id="fade" className='appear'></div>
                     </>
                     :
                     <>
