@@ -7,6 +7,7 @@
     grid-template-columns: 1fr;
     grid-gap: 5px;
     align-content: center;
+    position: absolute;
 }
 
 #menuBar div{
@@ -40,4 +41,14 @@
     height: 30px !important;
     display: block;
     transform: rotateZ(135deg);
+}
+
+#cover{
+    // position: absolute;
+    margin-left: 32px;
+    z-index: 100;
+    // background-color: #000;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }

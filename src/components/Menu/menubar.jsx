@@ -5,21 +5,24 @@ function Menubar({ setIsClicked }){
     const[clicked, isClicked] = useState(false)
     const close = (e)=> {
         if(!clicked){
-            e.target.parentElement.classList = 'close'
+            e.target.parentElement.lastChild.classList = 'close'
             setIsClicked(clicked)
             isClicked(!clicked)
         } else {
-            e.target.parentElement.classList = ''
+            e.target.parentElement.lastChild.classList = ''
             setIsClicked(clicked)
             isClicked(!clicked)
         }
     }
     return(
+        <>
+        <div onClick={close} id="cover"></div>
         <label id="menuBar">
-            <div onClick={close} id=""></div>
-            <div onClick={close} id=""></div>
-            <div onClick={close} id=""></div>
+            <div id=""></div>
+            <div id=""></div>
+            <div id=""></div>
         </label>
+        </>
     )
 }
 

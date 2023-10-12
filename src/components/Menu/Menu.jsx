@@ -61,7 +61,6 @@ function Menu(){
 
         const setIsClicked = (e) => {
             isClicked(!e)
-            console.log(clicked)
         }
     return(
         <>
@@ -74,7 +73,9 @@ function Menu(){
                 }
                 </div>
                 {windowWidth > 600 ?
-                        <Tab />
+                        <div className="tabs show">
+                            <Tab />
+                        </div>
                 : <></> 
                 }
 
