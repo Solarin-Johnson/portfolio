@@ -145,9 +145,7 @@
     #scroll{
         display: none;
     }
-    body{
-        // position: relative;
-    }
+
     .tabs{
         position: fixed;
         width: 200px;
@@ -157,7 +155,6 @@
         left: 0;
         z-index: 1;
         overflow-y: scroll;
-        
     }
     .menu{
         min-height: 500px;
@@ -168,6 +165,7 @@
         justify-items: center;
         padding: 20px 0;
         grid-gap: 10vh;
+        font-size: 18px !important;
     }
     
         

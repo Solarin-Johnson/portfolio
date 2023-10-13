@@ -7,15 +7,15 @@ function Tab({ hideMenu }){
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 66px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 206px)'
     }
     const skills = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 127px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 66px)'
     }
-    const contact = (e)=>{
+    const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 206px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 127px)'
     }
 
     // const hide = () => {
@@ -25,9 +25,9 @@ function Tab({ hideMenu }){
         <>
             <div className="menu" id="bug" >
                 <div id="home"onClick={home}>Home</div>
-                <div id="about" onClick={about} >About</div>
                 <div id="skills" onClick={skills}>Skills</div>
-                <div id="contact" onClick={contact}>Contact</div>
+                <div id="contact" onClick={projects}>Projects</div>
+                <div id="about" onClick={about} >About</div>
             </div>
             <div id="scroll"></div>
         </>
