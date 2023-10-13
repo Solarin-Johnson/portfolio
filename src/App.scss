@@ -6,6 +6,7 @@ body{
     background-color: var(--bg-color);
     font-family: 'Poppins', sans-serif;
     transition: .1s ease-in all;
+    overflow-x: hidden;
 }
 
 #container{
@@ -20,13 +21,15 @@ body{
 
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width:5px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 40px;
     cursor: pointer;
-    background-color: var(--text-color);
+    // background-color: var(--text-color);
+    background-color: #7272727a;
+    // opacity: .1;
 }
 
 ::-webkit-scrollbar-track {

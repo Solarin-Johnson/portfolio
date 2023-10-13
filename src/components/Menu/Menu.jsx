@@ -62,6 +62,9 @@ function Menu(){
         const setIsClicked = (e) => {
             isClicked(!e)
         }
+        // const hideMenu = (e) => {
+        //     setIsClicked(e)
+        // }
     return(
         <>
             <div id="menu" className={stick}>
@@ -98,17 +101,17 @@ function Menu(){
                     <>
                     {clicked ? 
                     <>
-                        <div className="tabs show">
+                        <label className="tabs show">
                             <Tab />
-                        </div>
+                        </label>
                         <div id="fade" className='appear'></div>
                     </>
                     :
                     <>
-                        <div className="tabs">
+                        <label className="tabs">
                             <Tab />
-                        </div>
-                        <div id="fade"></div>
+                        </label>
+                        <label id="fade"></label>
                     </>
                     
                 }
