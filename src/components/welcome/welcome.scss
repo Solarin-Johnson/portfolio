@@ -4,7 +4,7 @@
 
 .info{
     grid-column: 2/8;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .vector{
@@ -37,6 +37,7 @@
     }
     #name{
         font-size: 9vw;
+        height: calc(9vw * 4.5);
     }
     #description {
         font-size: 3.2vw;

@@ -2,8 +2,8 @@
     display: grid;
     align-content: center;
     justify-items: center;
-    grid-template-rows: repeat(3, 30px);
-    grid-gap: 50px;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 10%;
 }
 
 .contacts span{
@@ -20,4 +20,10 @@
 
 .contacts span:active{
     transform: scale(.9);
+}
+
+@media screen and (max-width: 425px) {
+    .contacts span{
+        font-size: 25px;
+    }
 }
