@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 function Info(){
     const [title, setTitle] = useState('')
     const [description, setDescription] = useState('I design user-friendly interfaces and seamless experiences, combining aesthetics with functionality. Skilled in user research and prototyping, I bring ideas to life.')
-    const [xstate, setXstate] = useState(true)
+    const [xstate, setXstate] = useState(false)
     const write = (arr) => {
         var i = 0
         var text = ''
@@ -15,11 +15,11 @@ function Info(){
                 i++;
             } else {
                 clearInterval(sleep);
-                setTimeout(() => {
-                    setXstate(!xstate)
-                }, 3000);
             }
         }, 100);
+        setTimeout(() => {
+            setXstate(!xstate)
+        }, 5000);
     }
 useEffect(() => {
     if(!xstate){
