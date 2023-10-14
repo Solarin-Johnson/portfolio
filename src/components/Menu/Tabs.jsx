@@ -11,7 +11,7 @@ function Tab({ hideMenu }){
     }
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 137px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 139px)'
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)

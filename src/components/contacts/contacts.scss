@@ -1,0 +1,23 @@
+.contacts{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-rows: repeat(3, 30px);
+    grid-gap: 50px;
+}
+
+.contacts span{
+    font-size: 30px;
+    color: var(--n-color);
+    transition: .13s ease-in all;
+}
+
+.contacts span:hover{
+    color: var(--a-color);
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.contacts span:active{
+    transform: scale(.9);
+}
