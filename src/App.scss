@@ -14,8 +14,9 @@ body{
     min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 60px auto;
+    grid-template-rows: 60px auto 500px;
     grid-template-columns: 1fr;
+    grid-gap: 2vh;
     color: var(--text-color);
 }
 

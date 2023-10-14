@@ -18,3 +18,82 @@ strong{
     font-weight: 800;
     color: var(--s-color);
 }
+
+.btn{
+    
+}
+
+
+
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+    background-color: var(--a-color);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: cursive;
+    color: #e8e8f0;
+    cursor: pointer;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.5s;
+    /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    outline: none;
+    letter-spacing: .5px;
+    user-select: none;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .button:after {
+    content: "";
+    background: #ffffff4a;
+    display: block;
+    position: absolute;
+    padding-top: 350%;
+    padding-left: 300%;
+    margin-left: 0px !important;
+    margin-top: 0%;
+    opacity: 0;
+    transition: all 0.9s;
+    border-radius: 100%;
+  }
+  
+  .button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
