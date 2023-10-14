@@ -7,15 +7,15 @@ function Tab({ hideMenu }){
     }
     const skills = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 60px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 61.5px)'
     }
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 140px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 137px)'
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 196px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 195px)'
     }
 
     // const hide = () => {

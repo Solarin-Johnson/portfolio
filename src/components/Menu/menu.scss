@@ -188,3 +188,9 @@
   .hint{
     transform: translateX(-100px);
   }
+
+  @media screen and (min-width: 767px) {
+    #menu{
+        padding: 0 7.2vw;
+    }
+  }
