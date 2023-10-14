@@ -1,0 +1,18 @@
+
+.vector{
+    background: url(../../vector.png);
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .vector{
+        background-size: contain;
+        background-position-y: center;
+        background-position-x: right;
+        margin-right: 40px;
+    }
+}

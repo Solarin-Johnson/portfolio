@@ -39,23 +39,27 @@ function Menu(){
         const [primaryColor, setPrimaryColor] = useState('#007BFF');
         const [bgColor, setBgColor] = useState('#F5F5F5');
         const [textColor, setTextColor] = useState('#333333');
+        const [neutralColor, setNeutralColor] = useState('#5b5b5b');
 
         const lightMode = () => {
                 setPrimaryColor('#03A9F4')
                 setBgColor('#121212')
                 setTextColor('#F5F5F5')
+                setNeutralColor('#b1b1b1')
                 setMode('dark')
             }
-        const darkMode = () => {
+            const darkMode = () => {
                 setPrimaryColor('#007BFF')
                 setBgColor('#F5F5F5')
                 setTextColor('#333333')
+                setNeutralColor('#5b5b5b')
                 setMode('light')
         }
         
         document.documentElement.style.setProperty('--primary-color', primaryColor)
         document.documentElement.style.setProperty('--bg-color', bgColor)
         document.documentElement.style.setProperty('--text-color', textColor)
+        document.documentElement.style.setProperty('--n-color', neutralColor)
 
         const[clicked, isClicked] = useState(false)
 

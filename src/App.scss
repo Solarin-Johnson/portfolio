@@ -14,10 +14,21 @@ body{
     min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 60px 3000px;
+    grid-template-rows: 60px 80vh;
     grid-template-columns: 1fr;
     color: var(--text-color);
 }
+
+.welcome {
+    padding: 0 20px 0 0;
+    display: grid;
+    min-height: 600px;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+}
+
 
 
 ::-webkit-scrollbar {

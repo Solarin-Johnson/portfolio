@@ -48,7 +48,7 @@
 #scroll{
     background-color: $a_color;
     width: 45px;
-    margin-left: 1px;
+    margin-left: -1.2px;
     justify-content: center;
     transition: .2s ease-out margin;
 }
@@ -116,6 +116,7 @@
     position: fixed;
     transition: .3s ease-in opacity;
     visibility: hidden;
+    
 }
 
 .appear{

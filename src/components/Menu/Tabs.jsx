@@ -3,19 +3,19 @@ function Tab({ hideMenu }){
     
     const home = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = '1.5px'
-    }
-    const about = (e)=>{
-        // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 206px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = '-1.2px'
     }
     const skills = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 66px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 62px)'
     }
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 127px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 137px)'
+    }
+    const about = (e)=>{
+        // console.log(e.target.parentElement.parentElement.lastChild)
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 192px)'
     }
 
     // const hide = () => {
