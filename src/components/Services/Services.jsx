@@ -19,16 +19,20 @@ function Services(){
                 <div className="app">
                 <div className="s_icon">
                 <span class="material-symbols-outlined">
-                    devices_other
+                    dashboard
                 </span>
                 </div>
                     <div className="service_name">Mobile and Web Apps Design</div>
                     <div className="s_description">Designing responsive websites and mobile apps for optimal user experiences on any devices.</div>
                 </div>
                 <div className="frontend">
-                <div className="s_icon"></div>
-                    <div className="service_name"></div>
-                    <div className="s_description"></div>
+                <div className="s_icon">
+                    <span class="material-symbols-outlined">
+                        team_dashboard
+                    </span>
+                </div>
+                    <div className="service_name">Front-end Development</div>
+                    <div className="s_description">Frontend developer creating responsive websites for optimal user experiences on all devices.</div>
                 </div>
             </div>
         </div>
