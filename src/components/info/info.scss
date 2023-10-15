@@ -93,3 +93,7 @@ strong{
     opacity: 1;
     transition: 0s;
   }
+
+  .button:active{
+    transform: scale(0.85);
+  }

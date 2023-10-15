@@ -9,9 +9,9 @@ function Tab({ hideMenu }){
             behavior: "smooth"
           });
     }
-    const skills = (e)=>{
+    const services = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 61.5px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 76.2px)'
         window.scrollTo({
             top: 1000,
             behavior: "smooth"
@@ -33,7 +33,7 @@ function Tab({ hideMenu }){
         <>
             <div className="menu" id="bug" >
                 <div id="home"onClick={home}>Home</div>
-                <div id="skills" onClick={skills}>Skills</div>
+                <div id="skills" onClick={services}>Services</div>
                 <div id="contact" onClick={projects}>Projects</div>
                 <div id="about" onClick={about} >About</div>
             </div>

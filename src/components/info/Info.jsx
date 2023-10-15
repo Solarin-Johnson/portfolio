@@ -16,10 +16,10 @@ function Info(){
             } else {
                 clearInterval(sleep);
             }
+            setTimeout(() => {
+                setXstate(!xstate)
+            }, 5000);
         }, 100);
-        setTimeout(() => {
-            setXstate(!xstate)
-        }, 5000);
     }
 useEffect(() => {
     if(!xstate){
@@ -37,10 +37,10 @@ useEffect(() => {
 
 
     useEffect(() => {
-        setTimeout(() => {
-            const text = 'UI/UX Designer'
-            write(text.split(''))
-        }, 10);
+        // setTimeout(() => {
+        //     const text = 'UI/UX Designer'
+        //     write(text.split(''))
+        // }, 10);
         // setInterval(() => {    
         //     setXstate(!xstate)
 
