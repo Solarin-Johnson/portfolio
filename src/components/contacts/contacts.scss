@@ -24,6 +24,16 @@
 
 @media screen and (max-width: 787px) {
     .contacts span{
-        font-size: 25px;
+        font-size: 25px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contacts{
+        grid-gap: 30px;
+    }
+
+    .contacts span{
+        font-size: 2.5vw;
     }
 }
