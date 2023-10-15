@@ -4,10 +4,18 @@ function Tab({ hideMenu }){
     const home = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = '1px'
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
     }
     const skills = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 61.5px)'
+        window.scrollTo({
+            top: 1000,
+            behavior: "smooth"
+          });
     }
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)

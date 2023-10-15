@@ -33,7 +33,6 @@ useEffect(() => {
         const text = 'UI Developer'
         write(text.split(''))
     }
-  console.log(xstate)
 }, [xstate])
 
 
