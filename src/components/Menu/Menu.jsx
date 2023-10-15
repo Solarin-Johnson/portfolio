@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import './menu.scss'
 import Tab from './Tabs';
 import { useState } from 'react';
@@ -81,7 +81,7 @@ function Menu(){
                 </div>
                 {windowWidth > 600 ?
                         <div className="tabs show">
-                            <Tab />
+                            <Tab/>
                         </div>
                 : <></> 
                 }

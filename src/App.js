@@ -4,12 +4,11 @@ import './_color.scss';
 import Menu from './components/Menu/Menu'
 import Welcome from './components/welcome/Welcome';
 import Services from './components/Services/Services'
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 100) {

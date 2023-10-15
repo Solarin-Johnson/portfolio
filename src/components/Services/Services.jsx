@@ -9,7 +9,7 @@ function Services(){
             <div className="service_container">
                 <div className="responsive">
                     <div className="s_icon">
-                        <span class="material-symbols-outlined">
+                        <span className="material-symbols-outlined">
                         vertical_split
                         </span>
                     </div>
@@ -18,7 +18,7 @@ function Services(){
                 </div>
                 <div className="app">
                 <div className="s_icon">
-                <span class="material-symbols-outlined">
+                <span className="material-symbols-outlined">
                     dashboard
                 </span>
                 </div>
@@ -27,7 +27,7 @@ function Services(){
                 </div>
                 <div className="frontend">
                 <div className="s_icon">
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         team_dashboard
                     </span>
                 </div>

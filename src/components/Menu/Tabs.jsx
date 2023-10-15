@@ -12,10 +12,13 @@ function Tab({ hideMenu }){
     const services = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 76.2px)'
-        window.scrollTo({
-            top: 1000,
-            behavior: "smooth"
-          });
+        let element = document.querySelectorAll('.services')[0]
+        if (element) {
+            element.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
     }
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
