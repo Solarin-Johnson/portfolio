@@ -21,6 +21,7 @@ body{
 }
 
 .welcome {
+    max-width: calc(100vw);
     height: 80vh;
     padding: 0 20px 0 0;
     display: grid;
@@ -38,7 +39,8 @@ body{
 
 .services {
     display: grid;
-    height: 300px;
+    min-height: 300px;
+    max-width: 100vw;
 }
 
 

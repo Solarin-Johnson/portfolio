@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.scss';
 import './_color.scss';
 import Menu from './components/Menu/Menu'
