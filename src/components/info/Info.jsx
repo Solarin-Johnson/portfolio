@@ -15,10 +15,10 @@ function Info(){
                 i++;
             } else {
                 clearInterval(sleep);
+                setTimeout(() => {
+                    setXstate(!xstate)
+                }, 5000);
             }
-            setTimeout(() => {
-                setXstate(!xstate)
-            }, 5000);
         }, 100);
     }
 useEffect(() => {

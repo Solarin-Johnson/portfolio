@@ -43,7 +43,7 @@ function Menu(){
 
         const lightMode = () => {
                 setPrimaryColor('#03A9F4')
-                setBgColor('#121212')
+                setBgColor('#1B1C1E')
                 setTextColor('#F5F5F5')
                 setNeutralColor('#b1b1b1')
                 setMode('dark')

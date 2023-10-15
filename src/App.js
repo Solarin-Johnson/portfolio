@@ -3,6 +3,7 @@ import './App.scss';
 import './_color.scss';
 import Menu from './components/Menu/Menu'
 import Welcome from './components/welcome/Welcome';
+import Services from './components/Services/Services'
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
         <Menu />
         <div id='camo'></div>
         <Welcome />
+        <Services />
       </div>
     )
   } else {
@@ -45,6 +47,7 @@ function App() {
       <div id='container'>
         <Menu />
         <Welcome />
+        <Services />
       </div>
     )
   }

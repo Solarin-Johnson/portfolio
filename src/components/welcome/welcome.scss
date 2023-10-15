@@ -15,10 +15,18 @@
     grid-row: span 12;
 }
 
+@media screen and (max-width: 425px){
+    .welcome{
+        height: 85vh !important;
+        min-height: 600px !important;
+    }
+}
+
 @media screen and (max-width: 767px){
     .welcome{
         padding: 0;
         height: 100vh;
+        min-height: 200vh;
         row-gap: 0;
     }
     .contacts{
@@ -34,10 +42,11 @@
         grid-row: 6/13;
         padding: 0 20px;
         align-content: start;
+        
     }
     #name{
         font-size: 9vw;
-        height: calc(9vw * 4.5);
+        height: calc(9vw * 4.4);
     }
     #description {
         font-size: 3.2vw;
@@ -48,6 +57,5 @@
     .welcome{
         height: 400px;
         min-height: 400px;
-
     }
 }

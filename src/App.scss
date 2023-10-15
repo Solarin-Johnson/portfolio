@@ -11,10 +11,10 @@ body{
 
 #container{
     max-width: 100vw;
-    min-height: 100vh;
+    // min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 60px auto 500px;
+    grid-template-rows: 60px auto auto;
     grid-template-columns: 1fr;
     grid-gap: 1.4vh;
     color: var(--text-color);
@@ -24,7 +24,7 @@ body{
     height: 80vh;
     padding: 0 20px 0 0;
     display: grid;
-    min-height: 600px;
+    // min-height: 800px;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr);
@@ -34,6 +34,11 @@ body{
 
 .welcome div{
     font-family: 'Poppins', sans-serif;
+}
+
+.services {
+    display: grid;
+    height: 300px;
 }
 
 
