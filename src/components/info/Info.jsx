@@ -30,7 +30,7 @@ useEffect(() => {
     } else {
         setTitle('')
         setDescription("I'm a UI developer, crafting user-friendly interfaces through coding expertise. I specialize in building seamless, visually appealing digital experiences for optimal user interactions.")
-        const text = 'UI Developer'
+        const text = 'Front- end Developer'
         write(text.split(''))
     }
 }, [xstate])

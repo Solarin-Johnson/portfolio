@@ -36,10 +36,10 @@
 }
 
 .previews{
-    width: 80vw;
+    width: 85vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, 250px);
     justify-content: center;
     grid-gap: 20px;    // height: auto;
 }
@@ -69,13 +69,13 @@
 
 @media screen and (max-width: 774px) {
     .projects{
-        height: 1250px !important;
+        height: 1500px !important;
     }
 }
 
 @media screen and (max-width: 1240px) {
     .projects{
-        height: 800px;
+        height: 1250px;
 
     }
 }
