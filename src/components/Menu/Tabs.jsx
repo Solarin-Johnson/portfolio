@@ -23,6 +23,13 @@ function Tab({ hideMenu }){
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 139px)'
+        let element = document.querySelectorAll('.projects')[0]
+        if (element) {
+            element.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)

@@ -5,6 +5,7 @@ import Menu from './components/Menu/Menu'
 import Welcome from './components/welcome/Welcome';
 import Services from './components/Services/Services'
 import { useEffect, useRef, useState } from 'react';
+import Projects from './components/Projects/Projects';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -31,25 +32,19 @@ function App() {
 
     };
   }, []);
-
-  if (isSticky) {
-    return (
-      <div id='container'>
-        <Menu />
+  return (
+    <div id='container'>
+      <Menu />
+      {isSticky ?
         <div id='camo'></div>
-        <Welcome />
-        <Services />
-      </div>
-    )
-  } else {
-    return (
-      <div id='container'>
-        <Menu />
-        <Welcome />
-        <Services />
-      </div>
-    )
-  }
+        :
+        <></>
+      }
+      <Welcome />
+      <Services />
+      <Projects />
+    </div>
+  )
 
 }
 

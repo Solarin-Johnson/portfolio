@@ -11,12 +11,11 @@ body{
 
 #container{
     max-width: 100vw;
-    // min-height: 100vh;
+    min-height: 100vh;
     margin: 0;
     display: grid;
-    grid-template-rows: 60px auto auto 200px;
+    grid-template-rows: 60px auto auto auto;
     grid-template-columns: 1fr;
-    grid-gap: 1.4vh;
     color: var(--text-color);
 }
 
@@ -40,6 +39,11 @@ body{
 .services {
     display: grid;
     min-height: 300px;
+    max-width: 100vw;
+}
+
+.projects{
+    min-height: 400px;
     max-width: 100vw;
 }
 
