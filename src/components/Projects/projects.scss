@@ -1,6 +1,6 @@
 .projects{
     display: grid;
-    background-color: #E7AFB7;
+    background-color: var(--bg-color);
     justify-content: center;
     justify-items: center;
     display: grid;
@@ -27,7 +27,8 @@
     font-weight: 500;
     // width: 50vw;
     width: 250px;
-    background-color: var(--bg-color);
+    background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .projects_head span{
@@ -37,23 +38,44 @@
 .previews{
     width: 80vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 250px);
-    grid-template-rows: repeat(auto-fit, 150px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, 200px);
     justify-content: center;
-    grid-gap: 20px;
-    // height: auto;
+    grid-gap: 20px;    // height: auto;
+}
+
+.previews :nth-child(odd){
+    background: #E7AFB7;
+}
+
+
+
+
+.previews :nth-child(even){
+    background-color: #96D4D4;
 }
 
 .preview{
+    transition: .2s ease-in all;
     border-radius: 15px;
+    cursor: pointer;
 }
 
-.preview{
-    background-color: var(--bg-color);
+
+
+.preview:hover{
+    transform: scale(1.02);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 774px) {
     .projects{
-        height: 800px !important;
+        height: 1250px !important;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .projects{
+        height: 800px;
+
     }
 }

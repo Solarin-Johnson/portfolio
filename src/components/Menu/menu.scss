@@ -1,7 +1,7 @@
 @import '../../color';
 
 #menu{
-    background-color: var(--bg-color);
+    background: var(--bg-color);
     padding: 0 20px;
     display: grid;
     grid-gap: 0 !important;
@@ -111,17 +111,17 @@
     left: 0;
     top: 0;
     height: 100vh;
-    background-color: var(--text-color);
+    // background-color: var(--text-color);
     opacity: 0;
     position: fixed;
-    transition: .3s ease-in opacity;
+    transition: 2s ease-in all;
     visibility: hidden;
-    
+    backdrop-filter: blur(5px);   
 }
 
 .appear{
     visibility: visible !important;
-    opacity: .1 !important;
+    opacity: 1 !important;
 }
 
 .show{
