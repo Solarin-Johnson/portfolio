@@ -9,7 +9,7 @@ function Projects(){
                 Top <span>Projects</span>
             </div>
             <div className="previews">
-                <Preview name='Job Seekr' description='Find your dream Job, Thousands of Jobs are posted here everyday, Find The Job That Suits You Today!' />
+                <Preview name='Job Seekr' description='Find your dream Job, Thousands of Jobs are posted here everyday, Find The Job That Suits You Today!' languages='HTML, CSS and React.js' screenshot={''} />
                 <Preview name='Job Seekr' description='Find your dream Job, Thousands of Jobs are posted here everyday, Find The Job That Suits You Today!' />
                 <Preview name='Job Seekr' description='Find your dream Job, Thousands of Jobs are posted here everyday, Find The Job That Suits You Today!' />
                 <Preview name='Job Seekr' description='Find your dream Job, Thousands of Jobs are posted here everyday, Find The Job That Suits You Today!' />

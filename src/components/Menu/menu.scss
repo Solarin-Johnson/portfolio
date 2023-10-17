@@ -100,9 +100,7 @@
     z-index: 100;
 }
 
-.sticky #menuBar {
-    padding-right: 20px;
-}
+
 
 #menu_bar{
     display: grid;
@@ -129,6 +127,10 @@
 
 .show{
     transform: translateX(0) !important;
+}
+
+#menuBar {
+    padding-right: 20px;
 }
 
   @media screen and (max-width: 600px) {

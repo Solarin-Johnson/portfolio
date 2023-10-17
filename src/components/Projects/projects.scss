@@ -59,7 +59,7 @@
 .preview{
     transition: .2s ease-in all;
     border-radius: 15px;
-    cursor: pointer;
+    padding: 15px;
     // display: grid;
     // grid-template-rows: 1fr;
     // grid-template-columns: 1fr 1fr;
@@ -69,18 +69,55 @@
     display: grid;
     grid-template-rows: 1fr;
     background: #E7AFB7;
-
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 2fr;
+    color: #1B1C1E;
 }
-
-.preview:first-child{}
 
 .preview:hover{
-    transform: scale(1.02);
+    // transform: scale(1.02);
 }
 
+#preview_text{
+    display: grid;
+}
 
+#project_name{
+    font-size: 25px;
+    font-weight: 500  !important;
+}
+#project_description{
+    font-size: 12px;
+    padding-right: 15%;
+}
 
+#languages{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#explore{
+    display: grid;
+    background-color: var(--bg-color);
+    text-align: center;
+    align-content: center;
+    border-radius: 1rem;
+    justify-self: start;
+    padding: 0 15px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: .25s ease-in;
+}
+
+#explore:hover{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+#preview_image{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 @media screen and (max-width: 850px) {
     .projects{
