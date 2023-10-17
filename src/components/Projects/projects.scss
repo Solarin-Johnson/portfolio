@@ -42,7 +42,7 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-rows: repeat(auto-fit, 250px);
     justify-content: center;
-    grid-gap: 20px;    // height: auto;
+    grid-gap: 50px;    // height: auto;
 }
 
 .previews .preview:nth-child(even){
@@ -115,7 +115,7 @@
 
 #preview_image{
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
