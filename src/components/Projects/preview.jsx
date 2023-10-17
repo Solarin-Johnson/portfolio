@@ -1,3 +1,4 @@
+import { useInView } from "react-intersection-observer"
 
 function Preview(props){
     const screenshot = {
@@ -9,8 +10,12 @@ function Preview(props){
     const git = () =>{
         window.open(props.git_repo)
     }
+    const [ref, inView] = useInView({
+        triggerOnce: true, // Animation will trigger only once when it enters the viewport
+    });
+
     return(
-        <div className="preview">
+        <div className={`preview ${inView ? 'in-viewport' : ''}`} ref={ref}>
            <div id="preview_text">
                 <div id="project_name">{props.name}</div>
                 <div id="project_description">{props.description}</div>

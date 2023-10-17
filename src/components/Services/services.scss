@@ -1,4 +1,4 @@
-.services{
+  .services{
     // margin-top: 5vh;
     // mix-blend-mode: darken;
     background-color: #D9EEE1;
@@ -11,10 +11,6 @@
     grid-gap: 1vh;
     align-content: center;
     padding: 70px 0;
-}
-
-.services div{
-    
 }
 
 .service_container{
@@ -37,7 +33,28 @@
     background-color: #D9EEE1;
     color: #1B1C1E;
     border-right: 2px solid #1B1C1E;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: translateY(80px);
+    opacity: 0;
 }
+
+@keyframes slide {
+    from{
+        transform: translateY(80px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#service_box.in-viewport {
+    animation: slide 1s forwards;
+    transform: translateY(0);
+    opacity: 1;
+}
+
 
 .frontend{
     border: none;
