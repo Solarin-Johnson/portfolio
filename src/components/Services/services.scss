@@ -6,7 +6,7 @@
     display: grid;
     // grid-template-rows: 80%;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: 200px;
+    grid-template-rows: minmax(200px, 250px);
     color: var(--text-color);
     grid-gap: 1vh;
     align-content: center;
@@ -155,7 +155,8 @@
         grid-template-rows: repeat(2, auto);
         grid-template-columns: 1fr;
         align-content: start;
-        row-gap: 50px;
+        row-gap: 30px;
+        padding: 40px 0;
     }
 
     .service_head{
@@ -167,6 +168,10 @@
     .service_head .head{
         width: 50vw;
         font-size: 40px;
+    }
+    .service_container{
+        padding: 0 20px;
+        grid-gap: 10px;
     }
 }
 

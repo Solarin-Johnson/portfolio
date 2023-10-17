@@ -39,8 +39,8 @@
 .previews{
     width: 85vw;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-template-rows: repeat(auto-fit, 250px);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-rows: repeat(auto-fit, 265px);
     justify-content: center;
     grid-gap: 50px;    // height: auto;
 }
@@ -101,8 +101,12 @@
     text-align: center;
     align-content: center;
     border-radius: 1rem;
+    // width: 250px;
+    height: 50px;
     justify-self: start;
-    padding: 0 15px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 500;
     color: var(--text-color);
     cursor: pointer;
     transition: .25s ease-in;
@@ -114,28 +118,72 @@
 }
 
 #preview_image{
-    background-position: center;
-    background-size: cover;
+    margin: 3px 0;
+    background-position: top;
+    background-size: 355px;
     background-repeat: no-repeat;
 }
+
+#last{
+    display: grid;
+    grid-template-columns: auto 30px;
+    grid-gap: 50px;
+    align-self: last baseline;
+}
+
+#github_repo{
+    align-self: last baseline;
+    font-size: 30px;
+    color: #1B1C1E;
+    cursor: pointer;
+    transition: .12s ease-in transform;
+}
+
+#github_repo:hover{
+    transform: scale(1.25);
+}
+
+#github_repo:active{
+    transform: scale(0.9);
+}
+
+
 
 @media screen and (max-width: 850px) {
     .projects{
         height: 1500px !important;
     }
+    .previews{
+        grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+    }
+    .preview{
+        grid-template-columns: 1fr;
+    }
+    #preview_image{
+        display: none;
+    }
+    #project_name{
+        font-size: 28px;
+        font-weight: 600 !important;
+    }
+    #project_description{
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
     .projects{
-        height: 1000px;
+        height: 1350px !important;
     }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .projects{
-        height: 900px;
-    }
-}
+
+// @media screen and (min-width: 144px) {
+//     .projects{
+//         height: 80vh !important;
+//     }
+// }
 
 @media screen and (max-width: 320px) {
     .previews{
