@@ -60,7 +60,7 @@
     display: grid;
     grid-template-columns: 90%;
     grid-template-rows: 80%;
-    justify-content: center;
+    // justify-content: center;
     align-content: center;
 }
 
@@ -74,6 +74,7 @@
     grid-template-rows: auto 90px 30px 50px;
     grid-template-columns: 1fr;
     align-content: center;
+    // justify-content: end;
     // justify-content: center;
     padding: 0 10px;
     row-gap: 25px;
@@ -133,7 +134,11 @@
         max-height: none;
     }
    .about_card, .about_text{
-    max-width: 90vw !important;
+    max-width: 85vw !important;
     width: 500px;
+    grid-template-columns: 100%;
    }
+    .card_container{
+        
+    }
 }

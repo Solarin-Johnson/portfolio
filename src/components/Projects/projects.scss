@@ -79,7 +79,7 @@
 
 #preview_text{
     display: grid;
-    grid-template-rows: 60px 80px 40px;
+    grid-template-rows: 60px 100px 30px 50px;
 }
 
 #project_name{
@@ -208,5 +208,13 @@
     .previews{
         // width: 100%;
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1118px) and (max-width: 1300px) {
+    #last{
+        grid-template-columns: auto 35px;
+        grid-gap: 0;
+        // font-size: 12px;
     }
 }
