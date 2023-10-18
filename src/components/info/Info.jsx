@@ -36,23 +36,16 @@ useEffect(() => {
 }, [xstate])
 
 
-    useEffect(() => {
-        // setTimeout(() => {
-        //     const text = 'UI/UX Designer'
-        //     write(text.split(''))
-        // }, 10);
-        // setInterval(() => {    
-        //     setXstate(!xstate)
-
-        // }, 5000);
-    },[]);
+   const whatsapp = ()=> {
+    window.open('https://wa.me/7054294703')
+   }
 
     return(
     <div className="info">
         <div id="name">Hi, I'm Solarin Johnson, a <strong>{title}</strong></div>
         <div id="description"> {description} </div>
         <div id="button">
-            <div className="button"> <span> Lets Talk </span></div>
+            <div className="button" onClick={whatsapp}> <span> Lets Talk </span></div>
         </div>
     </div>
 
