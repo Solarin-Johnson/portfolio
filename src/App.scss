@@ -44,12 +44,16 @@ body{
 
 .projects{
     min-height: auto;
-    height: 700px;
-    // max-height: 1300px;
+    min-height: 500px;
+    max-height: 1300px;
     max-width: 100vw;
 }
 
-
+.about{
+    max-width: 100vw;
+    height: 700px;
+  
+}
 
 ::-webkit-scrollbar {
     width:5px;

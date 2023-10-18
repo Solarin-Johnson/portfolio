@@ -10,7 +10,7 @@ function Services(){
             <div className="service_container">
                 <ServiceBox icon='vertical_split' class='responsive' name='Responsive Web Design' description='Crafting responsive web designs to ensure a seamless user experience on all devices.'/>
                 <ServiceBox icon='dashboard' class='app' name='Mobile and Web Apps Design' description='Designing responsive websites and mobile apps for optimal user experiences on any devices.'/>
-                <ServiceBox icon='team_dashboard' class='frontend' name='Front-end Development' description='Frontend developer creating responsive websites for optimal user experiences on all devices.<'/>
+                <ServiceBox icon='team_dashboard' class='frontend' name='Front-end Development' description='Frontend developer creating responsive websites for optimal user experiences on all devices.'/>
             </div>
         </div>
     )

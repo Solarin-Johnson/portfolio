@@ -6,6 +6,7 @@ import Welcome from './components/welcome/Welcome';
 import Services from './components/Services/Services'
 import { useEffect, useRef, useState } from 'react';
 import Projects from './components/Projects/Projects';
+import About from './components/About/About.';
 
 function App() {
   const [isSticky, setIsSticky] = useState(false);
@@ -43,6 +44,7 @@ function App() {
       <Welcome />
       <Services />
       <Projects />
+      <About />
     </div>
   )
 

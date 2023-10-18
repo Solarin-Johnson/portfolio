@@ -33,7 +33,14 @@ function Tab({ hideMenu }){
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 195px)'
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 196px)'
+        let element = document.querySelectorAll('.about')[0]
+        if (element) {
+            element.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
     }
 
     // const hide = () => {

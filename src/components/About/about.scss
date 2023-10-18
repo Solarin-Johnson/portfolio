@@ -1,0 +1,91 @@
+.about{
+    background-color: #F3ECEA;
+    // background-image: url('../../background_transparent.svg');
+    display: grid;
+    padding: 70px 20px;
+    grid-template-rows: 70px 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 3vh;
+}
+
+
+.about_head{
+    border-radius: 40px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: 500;
+    // width: 50vw;
+    width: 250px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    box-shadow: 0 0 10px #6060604e;
+}
+
+
+.about_container{
+    grid-gap: 10vw;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+}
+
+.about_card{
+    justify-self: end;
+    max-width: 500px;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    align-content: center;
+}
+.card_container{
+    background-image: url(https://solarin-johnson.github.io/screenshots/background_in_space.gif);
+    background-position: center;
+    background-size: cover;
+
+}
+.card_container, .text_container{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px #6060604e;
+}
+
+
+.about_text{
+    justify-self: start;
+    max-width: 500px;
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 70%;
+    grid-template-rows: 80%;
+    justify-content: center;
+    align-content: center;
+}
+
+.text_container{
+    box-shadow: none;
+    background-color: transparent;
+    color: #1B1C1E;
+}
+
+@media screen and (max-width: 768px) {
+    .about{
+        height: 1200px !important;
+    }
+    .about div{
+        max-width: none;
+    }
+    .about_container{
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
+        max-height: none;
+    }
+   .about_card, .about_text{
+    max-width: 90vw !important;
+    width: 500px;
+   }
+}
