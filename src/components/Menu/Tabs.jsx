@@ -1,47 +1,60 @@
 
-function Tab({ hideMenu }){
-    
+function Tab(props){
+    // if(props.width > 500){
+      
+    // }
     const home = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = '1px'
-        e.target.parentElement.parentElement.firstChild.children[2].click()
         window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-          });
+          top: 0,
+          behavior: "smooth"
+        });
+        if(document.getElementById('fade')){
+          document.getElementById('fade').click()
+        }
     }
     const services = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 76.2px)'
-        let element = document.querySelectorAll('.services')[0]
+        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 76.2px)'
+        let element = document.querySelectorAll('.services')[0].getBoundingClientRect()
         if (element) {
-            element.scrollIntoView({
+            window.scrollTo({
+              top:  element.top + window.pageYOffset -20,
               behavior: "smooth",
-              block: "start",
             });
-          }
+        }
+        if(document.getElementById('fade')){
+          document.getElementById('fade').click()
+        }
     }
     const projects = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(14vw + 139px)'
-        let element = document.querySelectorAll('.projects')[0]
+        let element = document.querySelectorAll('.projects')[0].getBoundingClientRect()
         if (element) {
-            element.scrollIntoView({
+            window.scrollTo({
+              top:  element.top + window.pageYOffset -10,
               behavior: "smooth",
-              block: "start",
             });
-          }
+        }
+        if(document.getElementById('fade')){
+          document.getElementById('fade').click()
+        }
     }
     const about = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(21vw + 196px)'
-        let element = document.querySelectorAll('.about')[0]
+        let element = document.querySelectorAll('.about')[0].getBoundingClientRect()
         if (element) {
-            element.scrollIntoView({
+            window.scrollTo({
+              top:  element.top + window.pageYOffset,
               behavior: "smooth",
-              block: "start",
             });
-          }
+        }
+        if(document.getElementById('fade')){
+          document.getElementById('fade').click()
+        }
     }
 
     // const hide = () => {

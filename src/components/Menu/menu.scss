@@ -126,8 +126,11 @@
     opacity: 1 !important;
 }
 
+.fixed{
+    position: fixed !important;
+}
+
 .show{
-    position: relative;
     transform: translateX(0) !important;
     z-index: 2 !important;
 }
@@ -212,4 +215,5 @@
         transform: translateX(-120vw);
         width: 100vw;
     }
+    
   }

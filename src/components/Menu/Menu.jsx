@@ -107,8 +107,8 @@ function Menu(){
                     <>
                     {clicked ? 
                     <>
-                        <label className="tabs show">
-                            <Tab />
+                        <label className="tabs show fixed">
+                            <Tab width={windowWidth}/>
                         </label>
                         <div id="fade"  onClick={fade_close} className='appear'></div>
                     </>
