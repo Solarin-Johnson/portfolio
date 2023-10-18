@@ -31,7 +31,9 @@ function Menu(){
     
         };
     }, []);
-
+        const fade_close = (e)=> {
+            e.target.parentElement.firstChild.children[2].click()
+        } 
         const stick = isSticky ? 'header sticky' : 'header';
 
        
@@ -108,7 +110,7 @@ function Menu(){
                         <label className="tabs show">
                             <Tab />
                         </label>
-                        <div id="fade" className='appear'></div>
+                        <div id="fade"  onClick={fade_close} className='appear'></div>
                     </>
                     :
                     <>

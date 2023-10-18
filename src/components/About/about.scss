@@ -18,8 +18,10 @@
     font-weight: 500;
     // width: 50vw;
     width: 250px;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    // background-color: var(--bg-color);
+    // color: var(--text-color);
+    color: #1B1C1E;
+    border: 3px solid #1B1C1E;
     box-shadow: 0 0 10px #6060604e;
 }
 
@@ -138,7 +140,13 @@
     width: 500px;
     grid-template-columns: 100%;
    }
-    .card_container{
-        
+    .about_head{
+        transform: scale(0.85);
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about{
+        padding: 75px 0;
     }
 }

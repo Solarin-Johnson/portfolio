@@ -206,3 +206,10 @@
         width: calc(100vw - 12vw);
     }
   }
+
+  @media screen and (max-width: 320px) {
+    .tabs{
+        transform: translateX(-120vw);
+        width: 100vw;
+    }
+  }

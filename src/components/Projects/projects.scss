@@ -205,9 +205,25 @@
 // }
 
 @media screen and (max-width: 320px) {
+    .projects{
+        padding: 60px 0;
+    }
     .previews{
         // width: 100%;
         grid-template-columns: 1fr;
+    }
+    #preview_text{
+        grid-template-rows: repeat(3, auto);
+    }
+    #last{
+        grid-template-columns: auto;
+    }
+    #github_repo{
+        display: none;
+    }
+
+    #project_description{
+        display: none;
     }
 }
 
@@ -216,5 +232,12 @@
         grid-template-columns: auto 35px;
         grid-gap: 0;
         // font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .projects_head{
+        width: 80vw;
+        font-size: 9vw;
     }
 }

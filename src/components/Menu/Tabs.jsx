@@ -4,6 +4,7 @@ function Tab({ hideMenu }){
     const home = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
         e.target.parentElement.parentElement.lastChild.style.marginLeft = '1px'
+        e.target.parentElement.parentElement.firstChild.children[2].click()
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -11,7 +12,7 @@ function Tab({ hideMenu }){
     }
     const services = (e)=>{
         // console.log(e.target.parentElement.parentElement.lastChild)
-        e.target.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 76.2px)'
+        e.target.parentElement.parentElement.parentElement.lastChild.style.marginLeft = 'calc(7vw + 76.2px)'
         let element = document.querySelectorAll('.services')[0]
         if (element) {
             element.scrollIntoView({

@@ -207,7 +207,22 @@
 
 @media screen and (max-width: 320px) {
     .services{
-        height: 160vh;
+        max-height: 1100px;
+        height: 380vw;
         // min-width: 100px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    .services{
+        overflow-y: auto;
+    }
+}
+
+
+@media screen and (max-width: 250px) {
+    .about_head{
+        width: 80vw !important;
+        font-size: 9vw;
     }
 }
