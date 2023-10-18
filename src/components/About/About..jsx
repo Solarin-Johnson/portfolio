@@ -21,7 +21,7 @@ function About(){
                         <div id="tabs">
                         <div className="tabs_title">My Skills</div>
                             <div className="tab_list">
-                                <li>HTML5, CSS3, SCSS, Javascript</li>
+                                <li>HTML, CSS, SCSS, Javascript</li>
                                 <li>React.js</li>
                                 <li>Responsive Design</li>
                                 <li>UI/UX Design</li>

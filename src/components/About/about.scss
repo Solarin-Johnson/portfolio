@@ -6,7 +6,7 @@
     grid-template-rows: 70px auto;
     grid-template-columns: 1fr;
     justify-items: center;
-    row-gap: 3vw;
+    row-gap: 4vw;
 }
 
 
@@ -158,16 +158,20 @@
 }
 
 a{
-    // text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
-    color: #F5F5F5;
+    color: #EACFBE;
     font-weight: 500;
+}
+
+li::marker{
+    color: #EACFBE;
 }
 
 @media screen and (max-width: 768px) {
     .about{
         height: 1300px !important;
-        row-gap: 0vh !important;
+        row-gap: 40px !important;
     }
     .about div{
         max-width: none;

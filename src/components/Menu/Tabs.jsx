@@ -48,7 +48,7 @@ function Tab(props){
         let element = document.querySelectorAll('.about')[0].getBoundingClientRect()
         if (element) {
             window.scrollTo({
-              top:  element.top + window.pageYOffset -20,
+              top:  element.top + window.pageYOffset -30,
               behavior: "smooth",
             });
         }
