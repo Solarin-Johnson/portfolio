@@ -2,7 +2,7 @@
     background-color: #F3ECEA;
     // background-image: url('../../background_transparent.svg');
     display: grid;
-    padding: 70px 20px;
+    padding: 75px 20px;
     grid-template-rows: 70px 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -36,7 +36,7 @@
     max-width: 500px;
     width: 40vw;
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 80%;
     grid-template-rows: 80%;
     justify-content: center;
     align-content: center;
@@ -45,13 +45,11 @@
     background-image: url(https://solarin-johnson.github.io/screenshots/background_in_space.gif);
     background-position: center;
     background-size: cover;
-
+    color: #F3ECEA;
+    box-shadow: -5px 5px 10px #6060604e;
 }
 .card_container, .text_container{
-    background-color: var(--bg-color);
-    color: var(--text-color);
     border-radius: 10px;
-    box-shadow: -5px 5px 10px #6060604e;
 }
 
 
@@ -60,21 +58,71 @@
     max-width: 500px;
     width: 40vw;
     display: grid;
-    grid-template-columns: 70%;
+    grid-template-columns: 90%;
     grid-template-rows: 80%;
     justify-content: center;
     align-content: center;
 }
 
 .text_container{
-    box-shadow: none;
     background-color: transparent;
     color: #1B1C1E;
 }
 
+.card_container{
+    display: grid;
+    grid-template-rows: auto 90px 30px 50px;
+    grid-template-columns: 1fr;
+    align-content: center;
+    // justify-content: center;
+    padding: 0 10px;
+    row-gap: 25px;
+}
+
+.card_image{
+    width: 180px;
+    height: 180px;
+    justify-self: center;
+    border-radius: 100%;
+    background-color: #F5F5F5;
+}
+
+.card_name{
+    justify-self: center;
+    font-size: 30px;
+    width: 150px;
+    line-height: 38px;
+    font-weight: 500;
+    text-align: center;
+    // margin-top: 10px;
+}
+
+.position{
+    display: grid;
+    align-items: last baseline;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.break{
+    background-color: transparent;
+    border-bottom: 2.5px solid var(--a-color);
+    width: 80px;
+    align-self: start;
+    justify-self: center;
+}
+
+.card_container div{
+    // background-color: #fff;
+}
+
+
+
+
 @media screen and (max-width: 768px) {
     .about{
-        height: 1200px !important;
+        height: 1000px !important;
+        row-gap: 0vh !important;
     }
     .about div{
         max-width: none;

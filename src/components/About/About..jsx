@@ -6,10 +6,10 @@ function About(){
             <div className="about_container">
                 <div className="about_card">
                     <div className="card_container">
-                        <div className="about_image"></div>
-                        <div className="about_name"></div>
+                        <div className="card_image"></div>
+                        <div className="card_name">Solarin Johnson</div>
                         <div className="break"></div>
-                        <div className="position"></div>
+                        <div className="position">Frontend Developer</div>
                     </div>
                 </div>
                 <div className="about_text">
