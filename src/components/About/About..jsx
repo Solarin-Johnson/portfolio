@@ -25,7 +25,7 @@ function About(){
                                 <li>React.js</li>
                                 <li>Responsive Design</li>
                                 <li>UI/UX Design</li>
-                                <li>Version Contol</li>
+                                <li>Version Contol (Git)</li>
                                 <li>Performance Optimisation</li>
                             </div>
                         </div>
