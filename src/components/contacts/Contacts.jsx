@@ -4,7 +4,7 @@ function Contact(){
         window.open('https://www.facebook.com/johnson.solarin/')
     }
     const linkedin = () => {
-        window.open('www.linkedin.com/in/solarin-johnson-99a52b26a')
+        window.open('https://www.linkedin.com/in/solarin-johnson-99a52b26a')
     }
     const git = () => {
         window.open('https://www.github.com/solarin-johnson')
