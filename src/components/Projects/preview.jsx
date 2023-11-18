@@ -11,7 +11,7 @@ function Preview(props){
         window.open(props.git_repo)
     }
     const [ref, inView] = useInView({
-        triggerOnce: true, // Animation will trigger only once when it enters the viewport
+        triggerOnce: true,
     });
 
     return(
